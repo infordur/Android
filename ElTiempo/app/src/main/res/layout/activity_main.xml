@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="rafa.edu.eltiempo.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ciudad"
+        android:textSize="40dp"
+        android:id="@+id/ciudad"
+        android:gravity="center_horizontal"/>
+
+        <ImageView
+            android:layout_width="450px"
+            android:layout_height="450px"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/estadoTiempo"
+/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Temperatura: "
+                android:textAlignment="viewEnd"
+                android:layout_weight="1"
+                android:textSize="25dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="xºC"
+                android:id="@+id/temperatura"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="25dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Humedad: "
+                android:textAlignment="viewEnd"
+                android:textSize="25dp"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/humedad"
+                android:text="xºC"
+                android:textSize="25dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Ciudad:"
+                android:gravity="center_vertical"
+                android:layout_gravity="bottom"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/campo"
+                android:inputType="text"
+                android:layout_gravity="bottom"
+                android:layout_weight="2"
+                />
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:layout_gravity="bottom"
+            android:id="@+id/buscar"
+
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

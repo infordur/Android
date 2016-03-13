@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Sumar2Numeros</string>
+    <string name="numero1">Numero 1</string>
+    <string name="numero2">Numero 2:</string>
+    <string name="resultado">Resultado:</string>
+    <string name="sumar">Sumar</string>
+    <string name="suma">Suma</string>
+    <string name="Resta">Restar</string>
+    <string name="Multiplicar">Multiplicar</string>
+    <string name="dividir">Dividir</string>
+</resources>

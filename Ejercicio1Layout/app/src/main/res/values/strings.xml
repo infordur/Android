@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ejercicio1Layout</string>
+    <string name="action_settings">Settings</string>
+    <string name="boton1">Boton1</string>
+    <string name="boton2">Boton2</string>
+    <string name="boton3">Boton3</string>
+    <string name="boton4">Boton4</string>
+</resources>

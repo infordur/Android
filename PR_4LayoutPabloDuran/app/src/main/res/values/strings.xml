@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PR_4LayoutPabloDuran</string>
+    <string name="nombre">Nombre(*)</string>
+    <string name="apellidos">Apellido(*)</string>
+    <string name="email">Email(*)</string>
+    <string name="checkbox">Subscribirse por e-mail</string>
+    <string name="titulo">elpais.es</string>
+    <string name="texto">Texto muy largo y extenso...</string>
+    <string name="mensaje">Mensaje</string>
+</resources>

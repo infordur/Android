@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="50dp" tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    >
+    <!-- Zona donde se realizan las operaciones-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="@drawable/borde">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_gravity="center_vertical"
+            android:textSize="50dp"
+            android:typeface="monospace"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+
+    <!-- Primera fila-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:textSize="15dp"
+            android:background="@drawable/efectoboton"
+            android:id="@+id/btnSiete"
+            android:layout_weight="1"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:id="@+id/btnOcho"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:background="@drawable/efectoboton"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:id="@+id/btnNueve"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:background="@drawable/efectoboton"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:id="@+id/btnDividir"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:background="@drawable/efectoboton"
+            />
+    </LinearLayout>
+    <!-- Segunda fila -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:id="@+id/btnCuatro"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:background="@drawable/efectoboton"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:id="@+id/btnCinco"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:background="@drawable/efectoboton"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:id="@+id/btnSeis"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:background="@drawable/efectoboton"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:id="@+id/btnMultiplicar"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:background="@drawable/efectoboton"/>
+    </LinearLayout>
+    <!-- Tercera fila -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:id="@+id/btnUno"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:background="@drawable/efectoboton"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:id="@+id/btnDos"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:background="@drawable/efectoboton"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:id="@+id/btnTres"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:background="@drawable/efectoboton"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/btnRestar"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:background="@drawable/efectoboton"/>
+    </LinearLayout>
+
+    <!-- Cuarta y quinta fila -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:weightSum="4"
+        >
+        <!-- Botones excepto el boton de suma -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <!-- cuarta fila -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:id="@+id/btnC"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:background="@drawable/efectoboton"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/btnCero"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:background="@drawable/efectoboton"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=","
+                    android:id="@+id/btnComa"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:background="@drawable/efectoboton"/>
+            </LinearLayout>
+            <!-- quinta fila -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+/-"
+                    android:id="@+id/btnSigno"
+                    android:layout_weight="0"
+                    android:textSize="15dp"
+                    android:background="@drawable/efectoboton"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="="
+                    android:id="@+id/btnIgual"
+                    android:layout_weight="3"
+                    android:textSize="15dp"
+                    android:background="@drawable/efectoboton"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Boton sumar -->
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="+"
+            android:id="@+id/btnSumar"
+            android:textSize="15dp"
+            android:background="@drawable/efectoboton"
+            android:layout_weight="1"
+
+          />
+    </LinearLayout>
+
+</LinearLayout>
